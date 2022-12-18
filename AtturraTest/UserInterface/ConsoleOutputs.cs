@@ -15,7 +15,7 @@ namespace AtturraTeset.UserInterface
             Console.WriteLine("Deductions:");
             foreach (var deduction in deductions)
             {
-                Console.WriteLine($"{deduction.Name}: {deduction.Amount:C2}");
+                Console.WriteLine($"{deduction}");
             }
         }
 

@@ -62,7 +62,7 @@ namespace AtturraTeset.Engine
         private PayDeduction CalculateDeduction(IDeduction deduction, decimal taxableIncome)
         {
             var deductionAmount = deduction.Calculate(taxableIncome);
-            var payDeduction = new PayDeduction(deduction.Name, deductionAmount);
+            var payDeduction = new PayDeduction(deduction.Name, deductionAmount, deduction.IsDecimalPlacesSignificant);
             return payDeduction;
         }
 

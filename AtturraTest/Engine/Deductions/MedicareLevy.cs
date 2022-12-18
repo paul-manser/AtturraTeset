@@ -10,6 +10,8 @@ namespace AtturraTest.Engine.Deductions
         public string Name => "Medicare Levy";
         public DeductionType DeductionType => DeductionType.Other;
 
+        public bool IsDecimalPlacesSignificant => true;
+
         public decimal Calculate(decimal grossPackage)
         {
             decimal levy;

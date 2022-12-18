@@ -13,6 +13,8 @@ namespace AtturraTeset.Engine.Deductions
 
         public decimal Rate => 0.095M;
 
+        public bool IsDecimalPlacesSignificant => true;
+
         public decimal Calculate(decimal grossPackage)
         {
             if (grossPackage < 0)

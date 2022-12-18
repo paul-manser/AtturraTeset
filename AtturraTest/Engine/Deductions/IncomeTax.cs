@@ -8,8 +8,10 @@ namespace AtturraTest.Engine.Deductions
         public Guid Id => throw new NotImplementedException();
 
         public string Name => "Income Tax";
-
+        
         public DeductionType DeductionType => DeductionType.IncomeTax;
+
+        public bool IsDecimalPlacesSignificant => true;
 
         public decimal Calculate(decimal taxableIncome)
         {

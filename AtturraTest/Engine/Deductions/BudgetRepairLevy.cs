@@ -10,6 +10,8 @@ namespace AtturraTest.Engine.Deductions
         public string Name => "Budget Repair Levy";
         public DeductionType DeductionType => DeductionType.Other;
 
+        public bool IsDecimalPlacesSignificant => false;
+
         public decimal Calculate(decimal grossPackage)
         {
             decimal levy;

@@ -6,7 +6,9 @@ namespace AtturraTest.Interfaces
     {
         public string Name { get; }
         public DeductionType DeductionType { get; }
+        public bool IsDecimalPlacesSignificant { get; }
 
         public decimal Calculate(decimal grossPackage);
+
     }
 }
