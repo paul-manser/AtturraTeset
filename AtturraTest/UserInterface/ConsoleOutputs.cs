@@ -73,5 +73,11 @@ namespace AtturraTeset.UserInterface
             Console.WriteLine("Calculating salary details....");
             NewSectionDivider();
         }
+
+        internal static void InvalidInput()
+        {
+            Console.WriteLine("Invalid Input. Please try again.");
+            NewSectionDivider();
+        }
     }
 }

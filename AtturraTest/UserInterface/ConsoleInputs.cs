@@ -20,30 +20,34 @@ namespace AtturraTeset.UserInterface
                 { "F", PayFrequency.Fortnightly }
             };
 
-            Console.Write("Enter your pay frequency (W for weekly, F for fortnightly, M for monthly: ");
-            var input = Console.ReadLine();
-            if ((input != null) && mapping.ContainsKey(input.Trim()))
-                return mapping[input];
-            else
-                throw new ArgumentOutOfRangeException("Must be W F or M");
+            do
+            {
+                Console.Write("Enter your pay frequency (W for weekly, F for fortnightly, M for monthly: ");
+                var input = Console.ReadLine();
+                if ((input != null) && mapping.ContainsKey(input.Trim()))
+                    return mapping[input];
+                else
+                    ConsoleOutputs.InvalidInput();
+            } while (true);
+
         }
 
         internal static decimal GetAnnualSalary()
         {
             decimal salary;
 
-            Console.Write("Enter your salary package amount: ");
-            var input = Console.ReadLine();
-            if (decimal.TryParse(input, out salary))
+            do
             {
-                if (salary <= 0)
-                    throw new ArgumentOutOfRangeException();
-                return salary;
-            }
-            else
-                throw new ArgumentOutOfRangeException();
+                Console.Write("Enter your salary package amount: ");
+                var input = Console.ReadLine();
+                if (decimal.TryParse(input, out salary) && (salary > 0))
+                {
+                    return salary;
+                }
+                else
+                    ConsoleOutputs.InvalidInput();
+            } while (true);
         }
-
 
     }
 }

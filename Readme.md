@@ -17,9 +17,7 @@ the application in the future.
 
 Unhandled exceptions are cought and logged (to debug console).
 
-Not much time has been given to user validation due to time issues with the family over the weekend 
-(the weekend before Christmas). This could easilty be improved by putting in a small loop instead of
-throwing the exception with a message.
+Basic user validataion has been implementented that repeats questions until a good response is entered.
 
 Even through there is not IOC container, all the main elements are created with IOC in mind passing
 in all the dependencies this inversion of control principle combined with the extensive use of interfaces
@@ -46,4 +44,5 @@ the calulations.
 - more comments could be added to the code but I feel most of this is self expanitory
 - more unit tests (I wrote them as I used them, not particularly aiming for high coverage)
 - pulling the seperate areas into there own projects (Engine, UI, Repositories).
-- I hard wired the calculations for the different deductions which should be done with data from a db
+- I hard wired the calculations for the different deductions which should be done with data from a 
+- could add UI tests (I have done this in the past with a number of different platforms)
