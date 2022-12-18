@@ -1,6 +1,8 @@
-#Code Test
+# Code Test
 
-##WHY
+
+## WHY
+
 This was created to demonstrate my style and ability of coding and awareness of different aspects.
 
 The solution breaks uses a repository pattern (Repositories) (partially implemented with dummy data)
@@ -23,7 +25,9 @@ Even through there is not IOC container, all the main elements are created with 
 in all the dependencies this inversion of control principle combined with the extensive use of interfaces
 allows for obeject to be swapped out as needed for extensibility.
 
-##POSSIBLE CHANGES TO DEDUCTABLES
+
+## POSSIBLE CHANGES TO DEDUCTABLES
+
 If the tax tables or other deductables were changed in the future the "imagine" database would be
 updated and appropiate IDeduction would be returned. All of the types of deduction (Tax, Super, Other) 
 are of this common base interface with the calucate method that, although hard coded because of time, could be
@@ -36,7 +40,8 @@ made. This could be extended to to have a forign key relationship to the actual 
 the calulations.
 
 
-##Improvements that could be made but are not implemented due to time constraints
+## Improvements that could be made but are not implemented due to time constraints
+
 - there could be a AsyncRepository pattern. A basis for this exists as IAsyncRepository
 - more comments could be added to the code but I feel most of this is self expanitory
 - more unit tests (I wrote them as I used them, not particularly aiming for high coverage)
