@@ -38,7 +38,8 @@ made. This could be extended to to have a forign key relationship to the actual 
 the calulations.
 
 
-## Improvements that could be made but are not implemented due to time constraints
+## Improvements 
+### (that could be made but are not implemented due to time constraints)
 
 - there could be a AsyncRepository pattern. A basis for this exists as IAsyncRepository
 - more comments could be added to the code but I feel most of this is self expanitory
